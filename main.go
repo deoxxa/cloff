@@ -17,7 +17,7 @@ func main() {
 	flag.Parse()
 
 	if *file == "" {
-		fmt.Fprintln(os.Stderr, "file argument is required")
+		flag.Usage()
 		os.Exit(1)
 	}
 
